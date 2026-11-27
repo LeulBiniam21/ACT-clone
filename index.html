@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACT - American College of Technology</title>
+  <meta name="description" content="American College of Technology (ACT) - Ethiopia's Gateway to International Higher Education. Accredited undergraduate, postgraduate, and professional training programs in Addis Ababa." />
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header sticky-top bg-white border-bottom">
+    <nav class="navbar navbar-expand-xl py-2" aria-label="Primary navigation">
+      <div class="container-xxl px-3 px-lg-4">
+        <a href="#top" class="navbar-brand d-flex align-items-center gap-2 me-3" aria-label="ACT Home">
+          <img src="img/logo.png" alt="ACT Logo" class="brand-logo rounded-circle shadow-sm" />
+          <div class="d-none d-sm-flex flex-column lh-sm">
+            <span class="fw-bold fs-5 text-navy">ACT</span>
+            <span class="small text-secondary">American College of Technology</span>
+          </div>
+        </a>
+
+        <!-- Pure CSS Mobile Toggle -->
+        <input type="checkbox" id="mobileNavToggle" class="d-none" />
+        <label for="mobileNavToggle" class="navbar-toggler border rounded-3 p-2 d-xl-none ms-auto" aria-label="Open navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+
+        <!-- Desktop Navigation -->
+        <div class="d-none d-xl-flex align-items-center justify-content-between flex-grow-1">
+          <ul class="navbar-nav mx-auto align-items-center gap-1">
+            <li class="nav-item">
+              <a href="#top" class="nav-link active px-3">Home</a>
+            </li>
+            <li class="nav-item dropdown nav-dropdown">
+              <a href="#impact" class="nav-link px-3 d-inline-flex align-items-center gap-1">
+                <span>About</span>
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <ul class="dropdown-menu shadow border rounded-3 p-2">
+                <li><a class="dropdown-item rounded-2 py-2" href="#impact">Our Story &amp; Impact</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#pillars">Institutional Pillars</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#partners">Partnerships</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-dropdown">
+              <a href="#programs" class="nav-link px-3 d-inline-flex align-items-center gap-1">
+                <span>Academic Programs</span>
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <ul class="dropdown-menu shadow border rounded-3 p-2">
+                <li><a class="dropdown-item rounded-2 py-2" href="#programs">Undergraduate Programs</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#programs">Postgraduate Programs</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#programs">International &amp; Online</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-dropdown">
+              <a href="#pillars" class="nav-link px-3 d-inline-flex align-items-center gap-1">
+                <span>Training &amp; Consulting</span>
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <ul class="dropdown-menu shadow border rounded-3 p-2">
+                <li><a class="dropdown-item rounded-2 py-2" href="#pillars">Professional Training</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#programs">College Advisement (CAP)</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#pillars">Consulting Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-dropdown">
+              <a href="#news" class="nav-link px-3 d-inline-flex align-items-center gap-1">
+                <span>News &amp; Others</span>
+                <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <ul class="dropdown-menu shadow border rounded-3 p-2">
+                <li><a class="dropdown-item rounded-2 py-2" href="#news">News &amp; Updates</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#testimonials">Community Voices</a></li>
+                <li><a class="dropdown-item rounded-2 py-2" href="#faq">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 flex-shrink-0">
+            <a href="#contact" class="btn btn-sm btn-outline-secondary">Your Safety Matters</a>
+            <a href="#contact" class="btn btn-sm btn-outline-dark">Login</a>
+            <a href="#contact" class="btn btn-sm btn-gold">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-nav d-xl-none w-100 border-top mt-2 pt-3 pb-2">
+          <div class="d-flex flex-column">
+            <a href="#top" class="py-2 border-bottom fw-medium text-navy">Home</a>
+            <a href="#programs" class="py-2 border-bottom fw-medium text-navy">Academic Programs</a>
+            <a href="#impact" class="py-2 border-bottom fw-medium text-navy">Our Impact</a>
+            <a href="#pillars" class="py-2 border-bottom fw-medium text-navy">Training &amp; Consulting</a>
+            <a href="#partners" class="py-2 border-bottom fw-medium text-navy">Partners</a>
+            <a href="#news" class="py-2 border-bottom fw-medium text-navy">News &amp; Updates</a>
+            <a href="#faq" class="py-2 border-bottom fw-medium text-navy">FAQ</a>
+            <a href="#contact" class="py-2 fw-medium text-navy">Contact</a>
+          </div>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#contact" class="btn btn-outline-dark btn-sm flex-fill">Login</a>
+            <a href="#contact" class="btn btn-gold btn-sm flex-fill">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero-section bg-navy-gradient position-relative overflow-hidden text-white">
+      <div class="container position-relative z-1">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <span class="badge rounded-pill hero-badge px-3 py-2 mb-4">
+              &#10024; FDRE ETA ACCREDITED INSTITUTION
+            </span>
+            <h1 class="hero-title fw-bold mb-3">
+              Ethiopia's Gateway to <span class="text-gold">International</span> Higher Education
+            </h1>
+            <p class="fs-5 text-white text-opacity-75 mb-4 max-w-desc">
+              Accredited programs, globally benchmarked standards, and a direct institutional bridge to the United States, delivered in the heart of Addis Ababa.
+            </p>
+            <div class="d-flex align-items-center flex-wrap gap-3 small text-white text-opacity-75 text-uppercase mb-4">
+              <span>In partnership with</span>
+              <span class="partner-divider"></span>
+              <strong class="text-white">Maharishi International University, USA</strong>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <a href="#contact" class="btn btn-gold px-4 py-2">Start Application &rarr;</a>
+              <a href="#programs" class="btn btn-outline-light px-4 py-2">Explore Programs</a>
+              <a href="#programs" class="btn btn-outline-light px-4 py-2">Apply to CAP Program</a>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill hero-pill px-3 py-2 fw-normal">
+                <span class="text-gold">&#9733;</span> Internationally accredited
+              </span>
+              <span class="badge rounded-pill hero-pill px-3 py-2 fw-normal">
+                <span class="text-gold">&#9733;</span> Career-ready learning
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="hero-impact-wrapper position-relative">
+              <div class="glass-card rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-start gap-3 mb-4">
+                  <div>
+                    <p class="eyebrow text-bright-gold mb-1">Institutional Impact at a Glance</p>
+                    <h2 class="h4 mb-0">ACT is built for outcomes</h2>
+                  </div>
+                  <div class="icon-box rounded-3" aria-hidden="true">&#128737;</div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="stat-box rounded-3 h-100 p-3">
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="icon-box icon-box-sm rounded-2">&#127891;</span>
+                        <span class="h4 font-serif fw-bold mb-0">1500+</span>
+                      </div>
+                      <p class="small text-white text-opacity-75 mb-0">Graduates</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="stat-box rounded-3 h-100 p-3">
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="icon-box icon-box-sm rounded-2">&#127963;</span>
+                        <span class="h4 font-serif fw-bold mb-0">4,500+</span>
+                      </div>
+                      <p class="small text-white text-opacity-75 mb-0">Professionals trained and placed successfully</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="stat-box rounded-3 h-100 p-3">
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="icon-box icon-box-sm rounded-2">&#10024;</span>
+                        <span class="h4 font-serif fw-bold mb-0">7</span>
+                      </div>
+                      <p class="small text-white text-opacity-75 mb-0">Academic Programs</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="stat-box rounded-3 h-100 p-3">
+                      <div class="d-flex align-items-center gap-2 mb-2">
+                        <span class="icon-box icon-box-sm rounded-2">&#128737;</span>
+                        <span class="h4 font-serif fw-bold mb-0">8+</span>
+                      </div>
+                      <p class="small text-white text-opacity-75 mb-0">Year of Excellence</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bridge-card rounded-4 p-3 text-white shadow-lg">
+                <h3 class="h6 fw-bold mb-1">U.S.-Ethiopia Bridge</h3>
+                <p class="small mb-0">Sholla Technology (USA) and institutional partnerships that expand ACT's reach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Marquee Strip -->
+    <div class="marquee-strip bg-white border-bottom py-3" aria-label="Featured technology and academic partners">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <img src="img/partners/infosec.svg" alt="Infosec" />
+          <img src="img/partners/icdl.png" alt="ICDL" />
+          <img src="img/partners/prometric-test-center.svg" alt="Prometric Test Center" />
+          <img src="img/partners/miu.webp" alt="Maharishi International University" />
+          <img src="img/partners/oracle-academy.webp" alt="Oracle Academy" />
+          <img src="img/partners/cisco-networking-academy.jpeg" alt="Cisco Networking Academy" />
+          <img src="img/partners/huawei.png" alt="Huawei" />
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <img src="img/partners/infosec.svg" alt="" />
+          <img src="img/partners/icdl.png" alt="" />
+          <img src="img/partners/prometric-test-center.svg" alt="" />
+          <img src="img/partners/miu.webp" alt="" />
+          <img src="img/partners/oracle-academy.webp" alt="" />
+          <img src="img/partners/cisco-networking-academy.jpeg" alt="" />
+          <img src="img/partners/huawei.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Programs Section -->
+    <section id="programs" class="section bg-white" aria-labelledby="programs-heading">
+      <div class="container">
+        <div class="mb-4">
+          <p class="eyebrow text-gold mb-2">Academic Programs</p>
+          <h2 id="programs-heading" class="section-title text-navy mb-2">World-Class Degrees, Ethiopian Roots</h2>
+          <p class="text-secondary max-w-desc mb-0">
+            Explore ACT’s academic pathways, designed to reflect local priorities while maintaining the quality and rigor expected from a globally connected institution.
+          </p>
+        </div>
+
+        <!-- Pure CSS Radio-Button Tabs -->
+        <div class="program-tabs-wrapper">
+          <input type="radio" name="programTab" id="tabUndergraduate" class="d-none" checked />
+          <input type="radio" name="programTab" id="tabPostgraduate" class="d-none" />
+          <input type="radio" name="programTab" id="tabInternational" class="d-none" />
+
+          <div class="d-flex flex-wrap gap-2 mb-4" role="tablist" aria-label="Program categories">
+            <label for="tabUndergraduate" class="btn btn-outline-dark rounded-pill px-4 tab-btn">Undergraduate</label>
+            <label for="tabPostgraduate" class="btn btn-outline-dark rounded-pill px-4 tab-btn">Postgraduate</label>
+            <label for="tabInternational" class="btn btn-outline-dark rounded-pill px-4 tab-btn">International</label>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between mb-3 programs-subheader">
+            <h3 class="h5 text-navy mb-0 subheader-ug">Undergraduate Programs</h3>
+            <h3 class="h5 text-navy mb-0 subheader-pg">Postgraduate Programs</h3>
+            <h3 class="h5 text-navy mb-0 subheader-intl">International Programs</h3>
+            <span class="badge rounded-pill text-bg-light text-navy border subheader-ug">2 programs</span>
+            <span class="badge rounded-pill text-bg-light text-navy border subheader-pg">4 programs</span>
+            <span class="badge rounded-pill text-bg-light text-navy border subheader-intl">2 programs</span>
+          </div>
+
+          <div class="row g-4 programs-grid">
+            <div class="col-md-6 col-lg-4 program-col program-ug">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Undergraduate</span>
+                  <span class="small text-secondary">On Campus &middot; 4 Years</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Bachelor of Computer Science</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">Hands-on software development, systems thinking, and problem-solving designed for highly competitive graduates.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">Software</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Systems</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Project Work</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-ug">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Undergraduate</span>
+                  <span class="small text-secondary">On Campus &middot; 4 Years</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Bachelor of Business Administration</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">A practical foundation in business, entrepreneurship, finance, and organizational leadership for career readiness.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">Business</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Finance</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Career Ready</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-pg">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Postgraduate</span>
+                  <span class="small text-secondary">On Campus &middot; 2 Years</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Master of Business Administration (Regular)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">Strategic management, leadership, and decision-making delivered through an internationally benchmarked curriculum.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">Leadership</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Strategy</span>
+                  <span class="badge text-bg-light text-navy fw-medium">On Campus</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-pg">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Postgraduate</span>
+                  <span class="small text-secondary">On Campus &middot; 2 Years</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Master of Computer Science (Regular)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">Advanced study in software engineering, cloud computing, AI, and cybersecurity for the modern digital economy.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">AI</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Cloud</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Security</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-pg">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Postgraduate</span>
+                  <span class="small text-secondary">Online &middot; Flexible</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Master of Business Administration (Online)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">A flexible pathway for working professionals who want a high-value graduate experience without leaving the workplace.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">Remote</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Flexible</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Professional</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-pg">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">Postgraduate</span>
+                  <span class="small text-secondary">Online &middot; Flexible</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Master of Project Management (Online)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">A focused online pathway for professionals who want practical project delivery skills, PMI-aligned thinking, and flexible study.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">PMO</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Project</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Remote</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-intl">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">International</span>
+                  <span class="small text-secondary">Partner Pathway &middot; Program Based</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">Master of Business Administration (MIU)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">A globally connected postgraduate pathway supported by ACT's institutional partnership with Maharishi International University.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">MIU</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Global</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Partner Pathway</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-lg-4 program-col program-intl">
+              <article class="card program-card h-100 rounded-4 p-4">
+                <div class="d-flex justify-content-between align-items-center gap-2 mb-3">
+                  <span class="badge rounded-pill badge-gold-soft">International</span>
+                  <span class="small text-secondary">Advisory &middot; Program Based</span>
+                </div>
+                <h4 class="h5 text-navy mb-2">College Advisement Program (CAP)</h4>
+                <p class="small text-secondary flex-grow-1 mb-3">Structured advising, university shortlisting, and application support for students pursuing study opportunities abroad.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-light text-navy fw-medium">Advising</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Applications</span>
+                  <span class="badge text-bg-light text-navy fw-medium">Study Abroad</span>
+                </div>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Program details &rarr;</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section bg-cream">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <p class="eyebrow text-gold mb-2">Impact</p>
+            <h2 class="section-title text-navy mb-3">Measurable Transformation Across Education and Workforce Development</h2>
+            <p class="text-secondary mb-3">
+              From academic delivery to large-scale consulting and training initiatives, ACT brings together education, technology, and implementation capacity in one institution.
+            </p>
+            <ul class="check-list list-unstyled d-grid gap-2 mb-4">
+              <li>National and regional workforce development delivery</li>
+              <li>Digital transformation consulting for institutions</li>
+              <li>Internationally connected academic and training partnerships</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#pillars" class="btn btn-navy px-4 py-2">Our Story</a>
+              <a href="#contact" class="btn btn-outline-dark px-4 py-2">Talk to Us</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <article class="card h-100 rounded-4 p-4">
+                  <div class="h2 font-serif fw-bold text-navy mb-1">550K+</div>
+                  <h3 class="h6 fw-semibold text-navy mb-2">Trained</h3>
+                  <p class="small text-secondary mb-0">Learners, professionals, youth, and women equipped through ACT-led education, digital skills, and workforce development initiatives.</p>
+                </article>
+              </div>
+              <div class="col-sm-6">
+                <article class="card h-100 rounded-4 p-4">
+                  <div class="h2 font-serif fw-bold text-navy mb-1">37+</div>
+                  <h3 class="h6 fw-semibold text-navy mb-2">Projects completed</h3>
+                  <p class="small text-secondary mb-0">Consulting, training, and implementation projects delivered with public, private, and development partners.</p>
+                </article>
+              </div>
+              <div class="col-sm-6">
+                <article class="card h-100 rounded-4 p-4">
+                  <div class="h2 font-serif fw-bold text-navy mb-1">14</div>
+                  <h3 class="h6 fw-semibold text-navy mb-2">12 regions and 2 chartered cities</h3>
+                  <p class="small text-secondary mb-0">Nationwide delivery reach across Ethiopia through regional programs, partnerships, and field implementation.</p>
+                </article>
+              </div>
+              <div class="col-sm-6">
+                <article class="card h-100 rounded-4 p-4">
+                  <div class="h2 font-serif fw-bold text-navy mb-1">20+</div>
+                  <h3 class="h6 fw-semibold text-navy mb-2">Years of combined leadership and delivery experience</h3>
+                  <p class="small text-secondary mb-0">Experienced leadership guiding higher education, consulting, and workforce transformation programs.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Service Pillars -->
+    <section id="pillars" class="section bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow text-gold mb-2">Core Service Pillars</p>
+          <h2 class="section-title text-navy mb-2">Integrated Capacity, End-to-End Delivery</h2>
+          <p class="text-secondary max-w-desc mx-auto mb-0">
+            ACT brings academic programs, consulting, technology, and workforce development together as a unified institutional capability.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Education &amp; Academic Programs</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Accredited undergraduate, postgraduate, and executive academic pathways built for strong student outcomes.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">Degree</span>
+                <span class="badge text-bg-light text-navy fw-medium">Executive</span>
+                <span class="badge text-bg-light text-navy fw-medium">Curriculum</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Workforce Development</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Upskilling programs for youth, women, and professionals with a practical focus on employability.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">Training</span>
+                <span class="badge text-bg-light text-navy fw-medium">Employability</span>
+                <span class="badge text-bg-light text-navy fw-medium">Upskilling</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Digital Transformation</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Technology consulting, platform design, and systems implementation for modern institutions.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">ERP</span>
+                <span class="badge text-bg-light text-navy fw-medium">LMS</span>
+                <span class="badge text-bg-light text-navy fw-medium">Cloud</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Project &amp; Program Management</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Delivery support, program monitoring, and management structures for complex initiatives.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">PMO</span>
+                <span class="badge text-bg-light text-navy fw-medium">MEL</span>
+                <span class="badge text-bg-light text-navy fw-medium">Delivery</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Management Consulting</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Advisory support in strategy, organizational improvement, and institutional capacity building.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">Strategy</span>
+                <span class="badge text-bg-light text-navy fw-medium">HR</span>
+                <span class="badge text-bg-light text-navy fw-medium">Advisory</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 p-4">
+              <span class="eyebrow text-gold mb-2">Pillar</span>
+              <h3 class="h5 text-navy mb-2">Online Learning</h3>
+              <p class="small text-secondary flex-grow-1 mb-3">Flexible digital learning experiences tailored for accessible skill-building and career growth.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light text-navy fw-medium">Remote</span>
+                <span class="badge text-bg-light text-navy fw-medium">Flexible</span>
+                <span class="badge text-bg-light text-navy fw-medium">Certification</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 pt-2">
+          <a href="#contact" class="btn btn-navy px-4 py-2">Explore Services &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Trusted Partners -->
+    <section id="partners" class="section bg-cream" aria-labelledby="partners-heading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 id="partners-heading" class="section-title text-navy mb-2">Our Trusted Partners</h2>
+          <p class="text-secondary max-w-desc mx-auto mb-0">
+            Collaborating with leading organizations to deliver excellence in education and innovation.
+          </p>
+        </div>
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 mb-4">
+          <div class="col">
+            <a href="https://www.miu.edu" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Maharishi International University">
+              <img src="img/partners/miu.webp" alt="Maharishi International University" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://academy.oracle.com/en/oa-web-overview.html" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Oracle Academy">
+              <img src="img/partners/oracle-academy.webp" alt="Oracle Academy" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.huawei.com/en/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Huawei">
+              <img src="img/partners/huawei.png" alt="Huawei" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.coursera.org/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Coursera">
+              <img src="img/partners/coursera.png" alt="Coursera" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://icdl.org/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="ICDL">
+              <img src="img/partners/icdl.png" alt="ICDL" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://mastercardfdn.org/en/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Mastercard Foundation">
+              <img src="img/partners/mastercard-foundation.jpg" alt="Mastercard Foundation" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.giz.de/en" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="GIZ">
+              <img src="img/partners/giz.jpg" alt="GIZ" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.ethiopianairlines.com/et" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Ethiopian Airlines">
+              <img src="img/partners/ethiopian-airlines.svg" alt="Ethiopian Airlines" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://dashenbanksc.com" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Dashen Bank">
+              <img src="img/partners/dashen-bank.png" alt="Dashen Bank" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.bankofabyssinia.com" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Bank of Abyssinia">
+              <img src="img/partners/bank-of-abyssinia.png" alt="Bank of Abyssinia" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.zemenbank.com.et/zemenib/#/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Zemen Bank">
+              <img src="img/partners/zemen-bank.png" alt="Zemen Bank" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://africom.et" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Africom Technologies">
+              <img src="img/partners/africom.png" alt="Africom Technologies" class="img-fluid" />
+            </a>
+          </div>
+          <div class="col">
+            <a href="http://www.excellerentsolutions.com/" target="_blank" rel="noopener" class="partner-tile rounded-3 bg-white border p-3" title="Excellerent Solutions">
+              <img src="img/partners/excellerent.png" alt="Excellerent Solutions" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 pt-2">
+          <a href="#partners" class="btn btn-navy px-4 py-2">Explore All Our Partners</a>
+          <a href="#contact" class="btn btn-outline-dark px-4 py-2">Become a Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News & Updates -->
+    <section id="news" class="section bg-white" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4 pb-1">
+          <div>
+            <p class="eyebrow text-gold mb-2">Stay Updated</p>
+            <h2 id="news-heading" class="section-title text-navy mb-2">Latest News &amp; Updates</h2>
+            <p class="text-secondary max-w-desc mb-0">Stay informed about the latest developments, achievements, and opportunities at ACT.</p>
+          </div>
+          <a href="#contact" class="btn btn-outline-dark px-4 py-2">View All News &rarr;</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 overflow-hidden">
+              <div class="news-img-wrap position-relative">
+                <img src="img/news/news-1.jpg" alt="ACT Regular Degree Programs 2019 E.C. Intake" class="w-100 h-100 object-fit-cover" />
+                <span class="badge rounded-pill bg-navy position-absolute top-0 start-0 m-3">Academics</span>
+              </div>
+              <div class="card-body d-flex flex-column gap-2 p-4">
+                <time datetime="2026-09-17" class="small text-secondary">Sep 17, 2026</time>
+                <h3 class="h6 text-navy lh-base mb-1">A degree may open the door, but the skills you build and the networks you create determine how far you'll go.</h3>
+                <p class="small text-secondary flex-grow-1 mb-2">At ACT American College of Technology, we prepare students with future-ready skills, professional connections, and the mindset needed to succeed in a rapidly changing world.</p>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Read more &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 overflow-hidden">
+              <div class="news-img-wrap position-relative">
+                <img src="img/news/news-2.jpg" alt="Master's Study at ACT American College of Technology" class="w-100 h-100 object-fit-cover" />
+                <span class="badge rounded-pill bg-navy position-absolute top-0 start-0 m-3">Academics</span>
+              </div>
+              <div class="card-body d-flex flex-column gap-2 p-4">
+                <time datetime="2026-09-16" class="small text-secondary">Sep 16, 2026</time>
+                <h3 class="h6 text-navy lh-base mb-1">Master’s Study is Not Harder Than You Think!</h3>
+                <p class="small text-secondary flex-grow-1 mb-2">A Master’s degree is more than just earning a higher qualification. It is a journey of personal growth, confidence building, self-realization, and acquiring the advanced skills needed to thrive.</p>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Read more &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card h-100 rounded-4 overflow-hidden">
+              <div class="news-img-wrap position-relative">
+                <img src="img/news/news-3.jpg" alt="ACT Graduation Celebration" class="w-100 h-100 object-fit-cover" />
+                <span class="badge rounded-pill bg-navy position-absolute top-0 start-0 m-3">Academics</span>
+              </div>
+              <div class="card-body d-flex flex-column gap-2 p-4">
+                <time datetime="2026-09-16" class="small text-secondary">Sep 16, 2026</time>
+                <h3 class="h6 text-navy lh-base mb-1">A Celebration of Achievement &amp; New Beginnings at ACT American College of Technology</h3>
+                <p class="small text-secondary flex-grow-1 mb-2">Today, we celebrate a remarkable milestone as we honor the dedication, perseverance, and achievements of our graduating class.</p>
+                <a href="#contact" class="small fw-semibold text-navy mt-auto">Read more &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-navy-gradient text-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="eyebrow text-gold mb-2">Student &amp; Graduate Voices</p>
+          <h2 class="section-title mb-2">What Our Community Says</h2>
+          <p class="text-white text-opacity-75 max-w-desc mx-auto mb-0">Hear from learners, graduates, and partners whose ACT experience shaped their next step.</p>
+        </div>
+
+        <!-- Pure CSS Toggle for Extra Testimonial -->
+        <input type="checkbox" id="testimonialsToggle" class="d-none" />
+
+        <div class="row g-4 testimonials-grid">
+          <div class="col-md-6 col-lg-4">
+            <article class="card glass-card h-100 rounded-4 p-4 justify-content-between gap-3 text-white">
+              <p class="small mb-0">“ACT transformed my career trajectory. I arrived with zero technical background and graduated with the skills and confidence to build enterprise software systems. The curriculum's international benchmarking made a tangible difference when I entered the job market.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <span class="avatar rounded-circle bg-navy text-bright-gold">AM</span>
+                <div>
+                  <strong class="d-block small">Abel Mekonnen</strong>
+                  <span class="small text-white text-opacity-75">Graduate &middot; BSc Computer Science</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card glass-card h-100 rounded-4 p-4 justify-content-between gap-3 text-white">
+              <p class="small mb-0">“The Online MBA program allowed me to advance my studies while maintaining my professional responsibilities. The quality of instruction and the real-world applicability of every module were exceptional. ACT's faculty genuinely invest in student success.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <span class="avatar rounded-circle bg-navy text-bright-gold">RY</span>
+                <div>
+                  <strong class="d-block small">Rediet Yohannes</strong>
+                  <span class="small text-white text-opacity-75">Graduate &middot; Online MBA</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="card glass-card h-100 rounded-4 p-4 justify-content-between gap-3 text-white">
+              <p class="small mb-0">“ACT's project management program is rigorous, internationally aligned, and deeply practical. As a mid-career professional, the PMI-aligned curriculum gave me the credentials and frameworks to lead complex programs with confidence and credibility.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <span class="avatar rounded-circle bg-navy text-bright-gold">MA</span>
+                <div>
+                  <strong class="d-block small">Mekdes Alemu</strong>
+                  <span class="small text-white text-opacity-75">Graduate &middot; Master of Project Management</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 extra-testimonial">
+            <article class="card glass-card h-100 rounded-4 p-4 justify-content-between gap-3 text-white">
+              <p class="small mb-0">“Through ACT's professional training and industry certification pathways, I gained hands-on skills recognized globally, opening immediate opportunities in enterprise IT infrastructure and cloud engineering.”</p>
+              <div class="d-flex align-items-center gap-3">
+                <span class="avatar rounded-circle bg-navy text-bright-gold">YA</span>
+                <div>
+                  <strong class="d-block small">Yonas Alemu</strong>
+                  <span class="small text-white text-opacity-75">IT Professional &middot; Training Alumnus</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 pt-2">
+          <label for="testimonialsToggle" class="btn btn-outline-light px-4 py-2 see-more-label"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Native HTML5 <details>/<summary>) -->
+    <section id="faq" class="section bg-white" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="text-center mb-5">
+              <h2 id="faq-heading" class="section-title text-navy mb-2">Frequently Asked Questions</h2>
+              <p class="text-secondary max-w-desc mx-auto mb-0">Find answers to common questions about admissions, programs, and campus life at ACT.</p>
+            </div>
+
+            <div class="d-grid gap-3">
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>What programs does ACT provide?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">ACT offers accredited undergraduate programs in BSc in Computer Science and BA in Business Administration, as well as graduate programs including MBA (Regular, Online, and International), MSc in Computer Science, and Online Master's in Project Management. We also provide over 100 professional training courses in technology, business, leadership, and soft skills.</p>
+              </details>
+
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>Is ACT accredited?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">Yes, ACT is a fully accredited higher education institution recognized by the Education and Training Authority (ETA). Our programs meet both national and international quality standards.</p>
+              </details>
+
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>How can I apply for admission?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">You can apply online through our website by visiting the Apply Now page. Create an account, fill out the application form, upload the required documents (transcripts, matric results, national ID, and passport photos), and submit. Initial review typically takes 5–7 business days.</p>
+              </details>
+
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>Can I transfer credits from another institution?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">Yes, ACT accepts transfer credits from accredited institutions on a case-by-case basis. You will need to provide official transcripts and course descriptions from your previous institution for evaluation by our academic committee.</p>
+              </details>
+
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>What makes ACT different from other institutions?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">ACT stands out for its strong industry partnerships with global organizations such as Oracle, Cisco, Coursera, Huawei, ICDL, and Infosec, providing students with internationally recognized certifications alongside their degrees.</p>
+              </details>
+
+              <details class="border rounded-3 bg-white">
+                <summary class="faq-question d-flex justify-content-between align-items-center gap-3 p-3 fw-semibold text-navy">
+                  <span>Can training courses be customized for organizations?</span>
+                  <span class="faq-plus text-gold fs-5" aria-hidden="true"></span>
+                </summary>
+                <p class="px-3 pb-3 mb-0 small text-secondary">Absolutely. ACT specializes in designing tailored training programs for corporate clients, government agencies, and NGOs, including organizations such as Ethiopian Airlines, Ethiotelecom, and Dashen Bank.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Begin Your Journey CTA Banner -->
+    <section class="section bg-navy-gradient text-white text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="eyebrow text-bright-gold mb-2">Begin Your Journey</p>
+            <h2 class="section-title mb-3">Ready to Build Your Future with ACT?</h2>
+            <p class="text-white text-opacity-75 mb-4">
+              Whether you are a prospective student, institutional partner, or donor organization — ACT's admissions team and program advisors are prepared to guide your next step. Reach out today.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="#contact" class="btn btn-gold px-4 py-2">Start Application &rarr;</a>
+              <a href="#contact" class="btn btn-outline-light px-4 py-2">Send an Inquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-navy mb-2">Contact Information</h2>
+          <p class="text-secondary max-w-desc mx-auto mb-0">Visit our campus or reach out through any of these channels. We are here to help you with any questions.</p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <form class="bg-cream border rounded-4 p-4" action="#contact" method="get">
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label fw-semibold text-navy">First Name</label>
+                  <input id="firstName" name="firstName" type="text" class="form-control" placeholder="First name" required />
+                </div>
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label fw-semibold text-navy">Last Name</label>
+                  <input id="lastName" name="lastName" type="text" class="form-control" placeholder="Last name" required />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold text-navy">Email Address</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="your@email.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label fw-semibold text-navy">Subject</label>
+                <input id="subject" name="subject" type="text" class="form-control" placeholder="How can we help?" required />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold text-navy">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell us more about your inquiry..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-navy w-100 py-2">Send Message</button>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="d-grid gap-3">
+              <div class="card rounded-3 p-3">
+                <h4 class="h6 text-navy mb-1">Address</h4>
+                <p class="small text-secondary mb-0">ACT Building, 4kilo Behind Abrehot Library<br />Addis Ababa, Ethiopia</p>
+              </div>
+              <div class="card rounded-3 p-3">
+                <h4 class="h6 text-navy mb-1">Phone</h4>
+                <p class="small text-secondary mb-0"><a href="tel:+251955040404">+251-955-040-404</a><br /><a href="tel:+251944150000">+251-944-150-000</a></p>
+              </div>
+              <div class="card rounded-3 p-3">
+                <h4 class="h6 text-navy mb-1">Email</h4>
+                <p class="small text-secondary mb-0"><a href="mailto:info@act.edu.et">info@act.edu.et</a></p>
+              </div>
+              <div class="card rounded-3 p-3 bg-navy text-white border-0">
+                <h4 class="h6 text-bright-gold mb-1">Office Hours</h4>
+                <p class="small text-white text-opacity-75 mb-0">
+                  Monday – Friday: 9:00 AM - 5:00 PM<br />
+                  Saturday: 9:00 AM - 12:00 PM<br />
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-light border-opacity-10">
+        <div class="col-lg-4">
+          <a href="#top" class="d-inline-flex align-items-center gap-2 mb-3">
+            <img src="img/logo.png" alt="ACT Logo" class="brand-logo rounded-circle" />
+            <div class="d-flex flex-column lh-sm">
+              <span class="fw-bold fs-5 text-white">ACT</span>
+              <span class="small text-white text-opacity-75">American College of Technology</span>
+            </div>
+          </a>
+          <p class="small text-white text-opacity-75 mb-2">
+            A leading higher education and consulting institution dedicated to developing globally competitive professionals.
+          </p>
+          <p class="small fst-italic text-bright-gold mb-3">“Place for dreamers, thinkers, and doers”</p>
+          <div class="d-flex flex-wrap gap-2 social-links">
+            <a href="https://www.facebook.com/ACTAmericanCollege/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">FB</a>
+            <a href="https://t.me/act_official_2018" target="_blank" rel="noopener" aria-label="Follow us on Telegram">TG</a>
+            <a href="https://www.linkedin.com/company/americancollegeoftechnology/" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn">IN</a>
+            <a href="https://www.youtube.com/@ACT_official_2018" target="_blank" rel="noopener" aria-label="Follow us on YouTube">YT</a>
+            <a href="https://www.instagram.com/act_official_2018/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">IG</a>
+            <a href="https://www.tiktok.com/@act_official_2018" target="_blank" rel="noopener" aria-label="Follow us on TikTok">TT</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-3 footer-col">
+          <h3 class="h6 mb-3">Academics</h3>
+          <ul class="list-unstyled d-grid gap-2 small text-white text-opacity-75 mb-0">
+            <li><a href="#programs">Undergraduate Programs</a></li>
+            <li><a href="#programs">Postgraduate Programs</a></li>
+            <li><a href="#pillars">Professional Training</a></li>
+            <li><a href="#pillars">Consulting Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-lg-2 footer-col">
+          <h3 class="h6 mb-3">Resources</h3>
+          <ul class="list-unstyled d-grid gap-2 small text-white text-opacity-75 mb-0">
+            <li><a href="#news">News &amp; Updates</a></li>
+            <li><a href="#testimonials">Community Voices</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#partners">Partners</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-lg-3 footer-col">
+          <h3 class="h6 mb-3">Contact</h3>
+          <ul class="list-unstyled d-grid gap-2 small text-white text-opacity-75 mb-0">
+            <li>4kilo ACT Building, Addis Ababa, Ethiopia</li>
+            <li><a href="mailto:info@act.edu.et">info@act.edu.et</a></li>
+            <li><a href="tel:+251955040404">+251-955-040-404</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-4 small text-white text-opacity-75">
+        <p class="mb-0">&copy; 2026 American College of Technology. All rights reserved.</p>
+        <nav aria-label="Footer legal links" class="d-flex flex-wrap gap-3">
+          <a href="#top">Back to Top</a>
+          <a href="#faq">Admissions FAQ</a>
+          <a href="#contact">Contact Admissions</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

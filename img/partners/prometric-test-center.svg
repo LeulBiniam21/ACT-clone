@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="96" viewBox="0 0 360 96" role="img" aria-labelledby="title">
+  <title id="title">Prometric Test Center</title>
+  <rect width="360" height="96" fill="#ffffff"/>
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0">
+    <text x="22" y="56" fill="#1f5fae" font-size="40" font-weight="700">prometric</text>
+    <circle cx="229" cy="28" r="8" fill="#73b6e6"/>
+    <text x="24" y="78" fill="#4b5563" font-size="15" font-weight="700">TEST CENTER</text>
+  </g>
+</svg>
